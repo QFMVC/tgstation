@@ -194,7 +194,7 @@
 	.=..()
 	opentime = 0
 
-/datum/browser/modal/open()
+/datum/browser/modal/open(use_onclose)
 	set waitfor = 0
 	opentime = world.time
 
@@ -463,4 +463,3 @@
 	// so just reset the user mob's machine var
 	if(src && src.mob)
 		src.mob.unset_machine()
-	return
